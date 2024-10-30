@@ -1,0 +1,270 @@
+body {
+    background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+#text1 {
+    text-align: center; /* 文字居中 */
+    position: absolute; /* 绝对定位 */
+    top: 50px; /* 顶部间距 */
+    font-size: 50px; /* 设置字体大小 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加艺术效果 */
+    color: #698B69; /* 设置字体颜色 */
+    font-family: 'Brush Script MT', serif; /* 设置字体类型 */
+}
+#text2 {
+    position: absolute; /* 绝对定位 */
+    bottom: 20px; /* 离底部20px */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中调整 */
+    text-align: center; /* 文字居中 */
+    font-size: 14px; /* 设置字体大小 */
+    color: rgb(139,137,137); /* 字体颜色 */
+}
+#screen {
+    width: 1000px;
+    height: 610px;
+    color: black;
+    background-color: rgba(97, 117, 98, 0.5);
+    border: 5px dashed #698B69; /* 添加虚线边框 */
+    border-radius: 40px; /* 圆角 */
+    display: flex;
+    justify-content: center; /* 内容水平居中 */
+    align-items: center; /* 内容垂直居中 */
+    position: relative; /* 使按钮相对于屏幕定位 */
+}
+button {
+    width: 150px;
+    height: 50px;
+    border: none; /* 无边框 */
+    border-radius: 25px; /* 圆角 */
+    background-size: cover; /* 背景覆盖 */
+    background-position: center; /* 背景居中 */
+    cursor: pointer; /* 光标为手形 */
+    position: absolute; /* 绝对定位 */
+    font-size: 30px;
+    color: #0d251a;
+    font-family: '华文行楷', sans-serif;
+    transition: transform 0.1s ease; /* 添加过渡效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 添加立体效果 */
+}
+button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* 鼠标悬停时增大阴影 */
+}
+#btn1 {
+    background-image: url(../image/btn1.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 200px; /* 按钮的水平位置 */
+}
+#btn2 {
+    background-image: url(../image/btn2.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 620px; /* 按钮的水平位置 */
+}
+#btn3 {
+    display: none; /* 隐藏按钮 */
+    background-image: url(../image/btn2.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 200px; /* 按钮的水平位置 */
+    font-size: 20px;
+}
+#btn4 {
+    display: none; /* 隐藏按钮 */
+    background-image: url(../image/btn2.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 410px; /* 按钮的水平位置 */
+    font-size: 20px;
+}
+#btn5 {
+    display: none; /* 隐藏按钮 */
+    background-image: url(../image/btn2.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 620px; /* 按钮的水平位置 */
+    font-size: 20px;
+}
+#btn6 {
+    display: none; /* 隐藏按钮 */
+    background-image: url(../image/btn2.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 200px; /* 按钮的水平位置 */
+    font-size: 25px;
+}
+#btn7 {
+    display: none; /* 隐藏按钮 */
+    background-image: url(../image/btn2.jpg);
+    top: 500px; /* 按钮的垂直位置 */
+    left: 620px; /* 按钮的水平位置 */
+    font-size: 25px;
+}
+#change {
+    width: 100px;
+    height: 50px;
+    background-color: #87A368; /* 背景颜色 */
+    font-family: 'Segoe Script', sans-serif;
+    font-size:24px;
+    top: 0; /* 按钮的垂直位置 */
+    left: 0; /* 按钮的水平位置（中间位置） */
+    z-index: 1; /* 使该按钮覆盖其他按钮 */
+}
+/* 点击效果 */
+button:active {
+    transform: scale(0.95); /* 点击时缩小到95% */
+}
+#container {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 30px; /* 按钮的垂直位置 */
+    left: 40px; /* 按钮的水平位置（中间位置） */
+    background-color: rgba(100, 122, 70, 0.6); /* 初始背景颜色 */
+    border-radius: 25px; /* 圆角 */
+    display: flex; /* 使用Flex布局居中内容 */
+    justify-content: center; /* 内容水平居中 */
+    align-items: center; /* 内容垂直居中 */
+    transition: background-color 0.3s; /* 颜色切换过渡 */
+}
+#src1 {
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    background-image: url("../image/src1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+#src1 input {
+    width: 70%; /* 设置输入框宽度 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #698B69; /* 边框颜色 */
+    border-radius: 15px; /* 圆角 */
+    font-size: 16px; /* 字体大小 */
+    outline: none; /* 去掉默认边框 */
+    background-color: rgba(255,255,255 ,0.5);
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+#mode-container {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-family: "等线", serif; /* 设置字体为宋体 */
+    padding: 10px; /* 内边距 */
+    border-radius: 10px; /* 圆角 */
+    color: #0d251a;
+}
+
+.form-control {
+    border-radius: 10px; /* 使选择框为圆角矩形 */
+    border: 1px solid #698B69; /* 边框颜色 */
+    padding: 5px; /* 内边距 */
+    outline: none; /* 去掉默认边框 */
+    color: #0d251a;
+}
+
+.form-control-select {
+    border-radius: 25px; /* 使选择框为圆角矩形 */
+    border: 1px solid #698B69; /* 边框颜色 */
+    padding: 5px; /* 内边距 */
+    outline: none; /* 去掉默认边框 */
+    color: #0d251a;
+    top: 30px;
+    left: 21%;
+    position: absolute;
+    font-family: '华文行楷', sans-serif;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.45); /* 初始背景颜色 */
+    transition: background-color 0.3s; /* 颜色切换过渡 */
+}
+
+#src2 {
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    background-image: url("../image/src2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+#src2 input {
+    width: 70%; /* 设置输入框宽度 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #698B69; /* 边框颜色 */
+    border-radius: 15px; /* 圆角 */
+    font-size: 16px; /* 字体大小 */
+    outline: none; /* 去掉默认边框 */
+    background-color: rgba(255,255,255 ,0.5);
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+#src3 {
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    background-image: url("../image/src3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 670px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+#src3 input {
+    width: 70%; /* 设置输入框宽度 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #698B69; /* 边框颜色 */
+    border-radius: 15px; /* 圆角 */
+    font-size: 16px; /* 字体大小 */
+    outline: none; /* 去掉默认边框 */
+    background-color: rgba(255,255,255 ,0.5);
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+.text {
+    font-size: 38px;
+    font-family: '华文行楷', sans-serif;
+    color: #0d251a;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.iv_input {
+    width: 70%; /* 设置输入框宽度 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #698B69; /* 边框颜色 */
+    border-radius: 15px; /* 圆角 */
+    font-size: 16px; /* 字体大小 */
+    outline: none; /* 去掉默认边框 */
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block; /* 使输入框成为块级元素 */
+    margin-top: 60px; /* 与上方元素之间的间距 */
+    position: relative; /* 改为相对定位以根据父容器定位 */
+}
+
+#options {
+    font-size: 16px;
+    font-family: '等线', sans-serif;
+    color: #0d251a;
+    position: absolute;
+    top: 155px;
+    left: 17%;
+}
